@@ -1,15 +1,14 @@
-﻿// Respostas referentes aos questionamentos do teste técnico da empresa Target Systems
+﻿using System.Text.Json;
+using TesteTecnicoTargetSistemas.Models;
+using TesteTecnicoTargetSistemas.Utils;
+// Respostas referentes aos questionamentos do teste técnico da empresa Target Systems
 
+Console.WriteLine("Resposta questão 1");
 //1) Observe o trecho de código abaixo: int INDICE = 13, SOMA = 0, K = 0;
 //Enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; }
 //Imprimir(SOMA);
 //Ao final do processamento, qual será o valor da variável SOMA?
 // Reposta: Valor 91
-
-using System.Runtime.Intrinsics.X86;
-using System.Text.Json;
-using TesteTecnicoTargetSistemas.Models;
-using TesteTecnicoTargetSistemas.Utils;
 
 var idx = 13;
 int sum = 0;
