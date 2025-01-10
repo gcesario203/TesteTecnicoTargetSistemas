@@ -97,4 +97,4 @@ Console.WriteLine("Digite uma cadeia de caracteres qualquer: ");
 
 var inputquest5 = Console.ReadLine();
 
-Console.WriteLine($"Sequência de caracteres invertida: {String.Join("", inputquest5.Reverse())}");
+Console.WriteLine($"Sequência de caracteres invertida: {String.Join("", Utils.ReverseStringManual(inputquest5))}");

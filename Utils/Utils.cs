@@ -48,4 +48,25 @@ public abstract class Utils
 
     public static double CalculaPercentual(double valorTotal, double valorQueOEstadoRecebeu)
         => (valorQueOEstadoRecebeu / valorTotal) * 100;
+
+    public static IEnumerable<char> ReverseStringManual(string @string, int? index = null, List<char> returnList = null)
+    {
+        if(@string.Length <= 0)
+            return @string.ToCharArray();
+
+        if (returnList is null)
+            returnList = new List<char>();
+
+        if (index == null)
+            index = @string.Length - 1;
+
+        returnList.Add(@string[(int)index]);
+
+        index -= 1;
+
+        if(index < 0)
+            return returnList;
+
+        return ReverseStringManual(@string, index, returnList);
+    }
 }
